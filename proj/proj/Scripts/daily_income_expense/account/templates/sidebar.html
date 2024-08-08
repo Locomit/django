@@ -1,0 +1,24 @@
+{%load static%}
+<link rel="stylesheet" href="{%static 'css/style.css'%}">
+<div class="side">
+    {%if user.is_authenticated%}
+    <h2><a href="{%url 'income:add'%}">Add Income</a></h2>
+    <h2><a href="">Add Expense</a></h2>
+    <h2><a href="{%url 'income:list1'%}">Income List</a></h2>
+    <h2><a href="">Expense List</a></h2>
+    <h2><a href="">Log Out</a></h2>
+    <h2><a href="">Edit Profil</a></h2>
+    {%else%}
+    
+    <h2><a href="{%url 'account:reg'%}">Register</a></h2>
+    <h2><a href="{%url 'account:login'%}">Log In</a></h2>
+    {%endif%}
+    <h2><a href="">Home</a></h2>
+    <h2><a href="">About us</a></h2>
+
+</div>
+
+<div class="main">
+    {%block body%}
+    {%endblock%}
+</div>

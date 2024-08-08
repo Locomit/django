@@ -1,0 +1,22 @@
+<h2>All Income List</h2>
+
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Income</th>
+        <th>Income_type</th>
+        <th>Income_date</th>
+        <th>Description</th>
+        <th>User</th>
+    </tr>
+    {%for i in incle%}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.income}}</td>
+        <td>{{i.income_type}}</td>
+        <td>{{i.income_date}}</td>
+        <td>{{i.Description}}</td>
+        <td>{{i.User}}</td>
+    </tr>
+    {%endfor%}
+</table>
