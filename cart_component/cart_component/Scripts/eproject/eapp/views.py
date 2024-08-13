@@ -59,5 +59,4 @@ def cart_list(request):
     cl=Cart.objects.filter(user_id=uid)
     context={'cl':cl}
     return render(request,'cartlist.html',context)
-    
 
